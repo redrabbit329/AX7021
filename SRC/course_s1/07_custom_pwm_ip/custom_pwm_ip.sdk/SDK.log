@@ -1,0 +1,394 @@
+09:13:13 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:13:15 INFO  : XSDB server has started successfully.
+09:13:17 INFO  : Processing command line option -hwspec D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf.
+09:27:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506475674286,  Project:1506474545534
+09:27:57 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+09:28:05 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+09:28:07 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+09:28:11 INFO  : 
+09:28:12 INFO  : Updating hardware inferred compiler options for pwm_test.
+09:28:12 INFO  : Clearing existing target manager status.
+09:28:13 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+09:28:14 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+09:28:15 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+09:39:43 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506476380953,  Project:1506475674286
+09:39:43 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+09:39:46 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+09:39:49 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+09:39:52 INFO  : 
+09:39:53 INFO  : Updating hardware inferred compiler options for pwm_test.
+09:39:58 INFO  : Clearing existing target manager status.
+09:39:58 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+09:39:59 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+09:39:59 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+09:40:28 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+10:31:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506479490763,  Project:1506476380953
+10:31:35 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+10:31:36 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+10:31:39 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:31:44 INFO  : 
+10:31:45 INFO  : Updating hardware inferred compiler options for pwm_test.
+10:31:46 INFO  : Clearing existing target manager status.
+10:31:46 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+10:31:47 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+10:31:47 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:32:15 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+10:41:07 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506480066385,  Project:1506479490763
+10:41:07 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+10:41:14 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+10:41:17 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:41:19 INFO  : 
+10:41:20 INFO  : Updating hardware inferred compiler options for pwm_test.
+10:41:23 INFO  : Clearing existing target manager status.
+10:41:23 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+10:41:24 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+10:41:24 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:41:52 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+10:50:18 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506480615894,  Project:1506480066385
+10:50:18 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+10:50:20 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+10:50:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:50:24 INFO  : 
+10:50:25 INFO  : Updating hardware inferred compiler options for pwm_test.
+10:50:27 INFO  : Clearing existing target manager status.
+10:50:27 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+10:50:28 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+10:50:28 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:50:55 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+10:53:53 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506480831561,  Project:1506480615894
+10:53:53 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+10:53:55 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+10:53:57 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:53:59 INFO  : 
+10:54:00 INFO  : Updating hardware inferred compiler options for pwm_test.
+10:54:01 INFO  : Clearing existing target manager status.
+10:54:01 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+10:54:02 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+10:54:02 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:54:29 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:07:23 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506481643322,  Project:1506480831561
+11:07:23 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:07:27 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+11:07:30 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:07:32 INFO  : 
+11:07:33 INFO  : Updating hardware inferred compiler options for pwm_test.
+11:07:33 INFO  : Clearing existing target manager status.
+11:07:33 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+11:07:35 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+11:07:35 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:08:03 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:08:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506481736327,  Project:1506481643322
+11:08:58 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:08:59 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+11:09:01 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:09:03 INFO  : 
+11:09:04 INFO  : Updating hardware inferred compiler options for pwm_test.
+11:09:05 INFO  : Clearing existing target manager status.
+11:09:05 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+11:09:06 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+11:09:06 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:09:34 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:23:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506482582232,  Project:1506481736327
+11:23:02 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:23:05 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+11:23:08 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:23:11 INFO  : 
+11:23:12 INFO  : Updating hardware inferred compiler options for pwm_test.
+11:23:12 INFO  : Clearing existing target manager status.
+11:23:12 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+11:23:13 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+11:23:14 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:23:43 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:31:01 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506483014912,  Project:1506482582232
+11:31:01 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:31:02 INFO  : Copied contents of D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+11:31:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:31:08 INFO  : 
+11:31:09 INFO  : Updating hardware inferred compiler options for pwm_test.
+11:31:09 INFO  : Clearing existing target manager status.
+11:31:09 INFO  : Closing and re-opening the MSS file of ther project pwm_test_bsp
+11:31:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:31:10 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:40:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:42 INFO  : Sourcing of 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:40:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+11:41:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:41:01 INFO  : Sourcing of 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:41:02 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:41:02 INFO  : System reset is completed.
+11:41:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:41:09 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:41:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:41:10 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:41:10 INFO  : 'ps7_init' command is executed.
+11:41:10 INFO  : 'ps7_post_config' command is executed.
+11:41:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:41:11 INFO  : The application 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:41:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf
+----------------End of Script----------------
+
+11:41:11 INFO  : Memory regions updated for context APU
+11:41:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:41:11 INFO  : 'con' command is executed.
+11:41:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:42:50 INFO  : Disconnected from the channel tcfchan#1.
+11:42:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:42:50 INFO  : Sourcing of 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:42:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:42:51 INFO  : System reset is completed.
+11:42:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:42:58 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:42:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:42:58 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:42:59 INFO  : 'ps7_init' command is executed.
+11:42:59 INFO  : 'ps7_post_config' command is executed.
+11:42:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:00 INFO  : The application 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf
+----------------End of Script----------------
+
+11:43:00 INFO  : Memory regions updated for context APU
+11:43:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:00 INFO  : 'con' command is executed.
+11:43:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:43:47 INFO  : Disconnected from the channel tcfchan#2.
+11:43:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:47 INFO  : Sourcing of 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:43:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:43:48 INFO  : System reset is completed.
+11:43:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:43:55 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:43:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:43:55 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:43:57 INFO  : 'ps7_init' command is executed.
+11:43:57 INFO  : 'ps7_post_config' command is executed.
+11:43:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:57 INFO  : The application 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf
+----------------End of Script----------------
+
+11:43:58 INFO  : Memory regions updated for context APU
+11:43:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:58 INFO  : 'con' command is executed.
+11:43:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:44:40 INFO  : Disconnected from the channel tcfchan#3.
+11:44:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:40 INFO  : Sourcing of 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:44:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:44:41 INFO  : System reset is completed.
+11:44:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:44:48 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:44:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:44:48 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:44:49 INFO  : 'ps7_init' command is executed.
+11:44:49 INFO  : 'ps7_post_config' command is executed.
+11:44:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:49 INFO  : The application 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:44:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf
+----------------End of Script----------------
+
+11:44:49 INFO  : Memory regions updated for context APU
+11:44:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:49 INFO  : 'con' command is executed.
+11:44:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:47:06 INFO  : Disconnected from the channel tcfchan#4.
+11:47:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:47:06 INFO  : Sourcing of 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:47:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:47:07 INFO  : System reset is completed.
+11:47:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:47:14 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:47:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:47:14 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:47:14 INFO  : 'ps7_init' command is executed.
+11:47:14 INFO  : 'ps7_post_config' command is executed.
+11:47:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:15 INFO  : The application 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:47:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf
+----------------End of Script----------------
+
+11:47:15 INFO  : Memory regions updated for context APU
+11:47:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:15 INFO  : 'con' command is executed.
+11:47:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:48:41 INFO  : Disconnected from the channel tcfchan#5.
+11:48:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:48:41 INFO  : Sourcing of 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:48:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:48:42 INFO  : System reset is completed.
+11:48:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:48:49 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:48:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:48:49 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:48:50 INFO  : 'ps7_init' command is executed.
+11:48:50 INFO  : 'ps7_post_config' command is executed.
+11:48:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:50 INFO  : The application 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:48:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf
+----------------End of Script----------------
+
+11:48:51 INFO  : Memory regions updated for context APU
+11:48:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:51 INFO  : 'con' command is executed.
+11:48:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:49:45 INFO  : Disconnected from the channel tcfchan#6.
+11:49:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:46 INFO  : Sourcing of 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:49:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:49:47 INFO  : System reset is completed.
+11:49:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:49:53 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:49:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:49:54 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:49:54 INFO  : 'ps7_init' command is executed.
+11:49:54 INFO  : 'ps7_post_config' command is executed.
+11:49:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:55 INFO  : The application 'D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:49:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/07_custom_pwm_ip/custom_pwm_ip.sdk/pwm_test/Debug/pwm_test.elf
+----------------End of Script----------------
+
+11:49:55 INFO  : Memory regions updated for context APU
+11:49:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:55 INFO  : 'con' command is executed.
+11:49:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+13:06:27 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 1022 xsdb eval "disconnect tcfchan#7"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+13:06:28 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,6 @@
+16:40:30 **** Auto Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+
+16:40:30 Build Finished (took 256ms)
+

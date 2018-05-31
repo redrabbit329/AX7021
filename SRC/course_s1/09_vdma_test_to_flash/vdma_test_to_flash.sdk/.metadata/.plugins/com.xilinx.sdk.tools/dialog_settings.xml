@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="system_wrapper_hw_platform_1" key="programflash.hwplatform"/>
+	<item value="" key="system_wrapper_hw_platform_1-fsblFile"/>
+	<item value="false" key="system_wrapper_hw_platform_1-blankCheck"/>
+	<item value="D:\AX7021\vivado_project\09_vdma_test_to_flash\vdma_test_to_flash.sdk\fsbl\bootimage\BOOT.bin" key="system_wrapper_hw_platform_1-imgFile"/>
+	<item value="" key="system_wrapper_hw_platform_1-offSet"/>
+	<item value="false" key="system_wrapper_hw_platform_1-verifyFlash"/>
+	<item value="qspi_single" key="system_wrapper_hw_platform_1-flashType"/>
+	<item value="Local" key="system_wrapper_hw_platform_1-target"/>
+	<item value="Auto Detect" key="system_wrapper_hw_platform_1-device"/>
+</section>

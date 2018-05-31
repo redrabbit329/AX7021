@@ -1,0 +1,451 @@
+10:27:01 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:27:03 INFO  : XSDB server has started successfully.
+10:27:04 INFO  : Processing command line option -hwspec E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper.hdf.
+10:31:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854655" && level==0} -index 1' command is executed.
+10:31:27 INFO  : 'fpga -state' command is executed.
+10:31:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:28 INFO  : Sourcing of 'E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:31:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0' command is executed.
+10:31:28 INFO  : Hardware design information is loaded from 'E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:31:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0' command is executed.
+10:31:28 INFO  : 'stop' command is executed.
+10:31:29 INFO  : 'ps7_init' command is executed.
+10:31:29 INFO  : 'ps7_post_config' command is executed.
+10:31:29 INFO  : 'con' command is executed.
+10:31:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:31:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:30 INFO  : The application 'E:/AX7010/labs/pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:31:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+loadhw E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+dow E:/AX7010/labs/pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+10:31:30 INFO  : Memory regions updated for context APU
+10:31:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:30 INFO  : 'con' command is executed.
+10:31:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+con
+----------------End of Script----------------
+
+10:32:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854655" && level==0} -index 1' command is executed.
+10:32:23 INFO  : FPGA configured successfully with bitstream "E:/AX7010/labs/pl_led/pl_led.runs/impl_1/system_wrapper.bit"
+10:32:34 INFO  : Disconnected from the channel tcfchan#1.
+10:32:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854655" && level==0} -index 1' command is executed.
+10:32:35 INFO  : 'fpga -state' command is executed.
+10:32:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:35 INFO  : Sourcing of 'E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:32:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0' command is executed.
+10:32:36 INFO  : Hardware design information is loaded from 'E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:32:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0' command is executed.
+10:32:37 INFO  : 'stop' command is executed.
+10:33:10 ERROR : Invalid DAP ACK value: 0
+10:33:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+loadhw E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+10:33:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854655" && level==0} -index 1' command is executed.
+10:33:20 INFO  : FPGA configured successfully with bitstream "E:/AX7010/labs/pl_led/pl_led.runs/impl_1/system_wrapper.bit"
+10:33:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854655" && level==0} -index 1' command is executed.
+10:33:27 INFO  : 'fpga -state' command is executed.
+10:33:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:28 INFO  : Sourcing of 'E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:33:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0' command is executed.
+10:33:28 INFO  : Hardware design information is loaded from 'E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:33:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0' command is executed.
+10:33:29 INFO  : 'stop' command is executed.
+10:33:29 INFO  : 'ps7_init' command is executed.
+10:33:29 INFO  : 'ps7_post_config' command is executed.
+10:33:29 INFO  : 'con' command is executed.
+10:33:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:33:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:30 INFO  : The application 'E:/AX7010/labs/pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:33:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+loadhw E:/AX7010/labs/pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+dow E:/AX7010/labs/pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+10:33:30 INFO  : Memory regions updated for context APU
+10:33:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:30 INFO  : 'con' command is executed.
+10:33:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854655"} -index 0
+con
+----------------End of Script----------------
+
+10:43:45 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:46:45 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+10:46:45 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+10:52:52 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:52:54 INFO  : XSDB server has started successfully.
+10:52:55 INFO  : Restoring global repository preferences: 
+		 C:\Users\Administrator\Desktop\device-tree-xlnx
+10:52:55 INFO  : Processing command line option -hwspec Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper.hdf.
+10:54:19 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:54:20 INFO  : XSDB server has started successfully.
+10:54:21 INFO  : Restoring global repository preferences: 
+		 C:\Users\Administrator\Desktop\device-tree-xlnx
+10:54:21 INFO  : Processing command line option -hwspec Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper.hdf.
+10:59:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:59:16 INFO  : Sourcing of 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:59:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+10:59:16 INFO  : System reset is completed.
+10:59:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+10:59:22 INFO  : FPGA configured successfully with bitstream "Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:59:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+10:59:22 INFO  : Hardware design information is loaded from 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:59:22 INFO  : 'ps7_init' command is executed.
+10:59:22 INFO  : 'ps7_post_config' command is executed.
+10:59:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:59:23 INFO  : The application 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:59:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+10:59:23 INFO  : Memory regions updated for context APU
+10:59:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:59:23 INFO  : 'con' command is executed.
+10:59:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+10:59:55 INFO  : Disconnected from the channel tcfchan#1.
+10:59:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:59:55 INFO  : Sourcing of 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:59:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+10:59:56 INFO  : System reset is completed.
+10:59:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:00:01 INFO  : FPGA configured successfully with bitstream "Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:00:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:00:01 INFO  : Hardware design information is loaded from 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:00:02 INFO  : 'ps7_init' command is executed.
+11:00:02 INFO  : 'ps7_post_config' command is executed.
+11:00:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:00:02 INFO  : The application 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:00:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+11:00:02 INFO  : Memory regions updated for context APU
+11:00:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:00:03 INFO  : 'con' command is executed.
+11:00:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:00:58 INFO  : Disconnected from the channel tcfchan#2.
+11:00:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:00:59 INFO  : Sourcing of 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:00:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:00:59 INFO  : System reset is completed.
+11:01:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:01:04 INFO  : FPGA configured successfully with bitstream "Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:01:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:01:05 INFO  : Hardware design information is loaded from 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:01:06 INFO  : 'ps7_init' command is executed.
+11:01:06 INFO  : 'ps7_post_config' command is executed.
+11:01:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:01:06 INFO  : The application 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:01:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+11:01:06 INFO  : Memory regions updated for context APU
+11:01:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:01:07 INFO  : 'con' command is executed.
+11:01:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:01:35 INFO  : Disconnected from the channel tcfchan#3.
+11:01:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:01:36 INFO  : Sourcing of 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:01:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:01:36 INFO  : System reset is completed.
+11:01:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:01:41 INFO  : FPGA configured successfully with bitstream "Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:01:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:01:42 INFO  : Hardware design information is loaded from 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:01:42 INFO  : 'ps7_init' command is executed.
+11:01:43 INFO  : 'ps7_post_config' command is executed.
+11:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:01:43 INFO  : The application 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:01:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+11:01:43 INFO  : Memory regions updated for context APU
+11:01:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:01:44 INFO  : 'con' command is executed.
+11:01:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:05:11 INFO  : Disconnected from the channel tcfchan#4.
+11:05:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:05:11 INFO  : Sourcing of 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:05:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:05:12 INFO  : System reset is completed.
+11:05:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:05:17 INFO  : FPGA configured successfully with bitstream "Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:05:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:05:17 INFO  : Hardware design information is loaded from 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:05:18 INFO  : 'ps7_init' command is executed.
+11:05:18 INFO  : 'ps7_post_config' command is executed.
+11:05:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:05:19 INFO  : The application 'Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:05:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AC/AC7010/9_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+11:05:19 INFO  : Memory regions updated for context APU
+11:05:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:05:19 INFO  : 'con' command is executed.
+11:05:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:06:25 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:09:25 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+11:09:25 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+09:49:43 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:49:44 INFO  : XSDB server has started successfully.
+09:49:44 INFO  : Restoring global repository preferences: 
+		 C:\Users\Administrator\Desktop\device-tree-xlnx
+09:49:44 INFO  : Processing command line option -hwspec Y:/project/AC/AC7020/AC7020_CD/02_source/vivado_project/04_pl_led/pl_led.sdk/system_wrapper.hdf.
+09:44:45 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:44:47 INFO  : XSDB server has started successfully.
+09:44:49 INFO  : Processing command line option -hwspec D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper.hdf.
+09:45:23 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:45:24 INFO  : XSDB server has started successfully.
+09:46:00 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:46:01 INFO  : XSDB server has started successfully.
+09:46:02 INFO  : Processing command line option -hwspec D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper.hdf.
+09:54:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:39 INFO  : Sourcing of 'D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:54:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+09:54:39 INFO  : System reset is completed.
+09:54:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+09:54:46 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+09:54:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+09:54:47 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+09:54:47 INFO  : 'ps7_init' command is executed.
+09:54:47 INFO  : 'ps7_post_config' command is executed.
+09:54:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:54:48 INFO  : The application 'D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:54:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+09:54:48 INFO  : Memory regions updated for context APU
+09:54:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:54:48 INFO  : 'con' command is executed.
+09:54:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+09:56:12 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:59:15 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+09:59:15 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+16:42:41 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:42:43 INFO  : XSDB server has started successfully.
+16:42:44 INFO  : Processing command line option -hwspec D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper.hdf.
+16:42:44 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+16:42:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506326330142,  Project:1506303798104
+16:42:46 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper.hdf.
+16:42:46 INFO  : Copied contents of D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+16:42:48 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:42:53 INFO  : 
+16:42:54 INFO  : Updating hardware inferred compiler options for pl_led_test.
+16:42:54 INFO  : Clearing existing target manager status.
+17:20:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:20:49 INFO  : Sourcing of 'D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:20:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+17:20:50 INFO  : System reset is completed.
+17:20:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+17:20:57 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+17:20:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+17:20:58 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf'.
+17:20:58 INFO  : 'ps7_init' command is executed.
+17:20:58 INFO  : 'ps7_post_config' command is executed.
+17:20:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:20:59 INFO  : The application 'D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:20:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/04_pl_led/pl_led.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+17:20:59 INFO  : Memory regions updated for context APU
+17:20:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:20:59 INFO  : 'con' command is executed.
+17:20:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+17:55:32 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:55:32 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:58:35 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+17:58:35 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more

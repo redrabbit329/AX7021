@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]D:\AX7021\vivado_project\09_vdma_test_to_flash\vdma_test_to_flash.sdk\fsbl\Debug\fsbl.elf
+	D:\AX7021\vivado_project\09_vdma_test_to_flash\vdma_test_to_flash.sdk\system_wrapper_hw_platform_0\system_wrapper.bit
+	D:\AX7021\vivado_project\09_vdma_test_to_flash\vdma_test_to_flash.sdk\vdma_test\Debug\vdma_test.elf
+}

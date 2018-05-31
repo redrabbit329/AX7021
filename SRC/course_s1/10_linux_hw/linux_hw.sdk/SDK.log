@@ -1,0 +1,280 @@
+10:23:51 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:23:53 INFO  : XSDB server has started successfully.
+10:23:55 INFO  : Processing command line option -hwspec D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper.hdf.
+11:49:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1506048891183,  Project:1506046590778
+11:49:30 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:49:32 INFO  : Copied contents of D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+11:49:36 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:49:46 INFO  : 
+11:49:47 INFO  : Updating hardware inferred compiler options for fsbl.
+11:49:47 INFO  : Clearing existing target manager status.
+11:49:48 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+11:49:50 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:49:51 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+13:28:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:39:11 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:39:12 INFO  : XSDB server has started successfully.
+13:39:12 INFO  : Processing command line option -hwspec D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper.hdf.
+13:39:12 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+14:20:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 201712180096" && level==0} -index 1' command is executed.
+14:20:56 INFO  : 'fpga -state' command is executed.
+14:20:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:57 INFO  : Sourcing of 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:20:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0' command is executed.
+14:20:58 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:20:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0' command is executed.
+14:20:58 INFO  : 'stop' command is executed.
+14:20:59 INFO  : 'ps7_init' command is executed.
+14:20:59 INFO  : 'ps7_post_config' command is executed.
+14:20:59 INFO  : 'con' command is executed.
+14:20:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:21:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:04 INFO  : The application 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/HDMI_test/Debug/HDMI_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:21:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+loadhw D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+dow D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/HDMI_test/Debug/HDMI_test.elf
+----------------End of Script----------------
+
+14:21:04 INFO  : Memory regions updated for context APU
+14:21:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:04 INFO  : 'con' command is executed.
+14:21:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+con
+----------------End of Script----------------
+
+14:21:17 INFO  : Disconnected from the channel tcfchan#1.
+14:21:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:17 INFO  : Sourcing of 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:21:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0' command is executed.
+14:21:18 INFO  : System reset is completed.
+14:21:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 201712180096" && level==0} -index 1' command is executed.
+14:21:25 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:21:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0' command is executed.
+14:21:25 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:21:26 INFO  : 'ps7_init' command is executed.
+14:21:26 INFO  : 'ps7_post_config' command is executed.
+14:21:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:30 INFO  : The application 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/HDMI_test/Debug/HDMI_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:21:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 201712180096" && level==0} -index 1
+fpga -file D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+loadhw D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+dow D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/HDMI_test/Debug/HDMI_test.elf
+----------------End of Script----------------
+
+14:21:30 INFO  : Memory regions updated for context APU
+14:21:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:31 INFO  : 'con' command is executed.
+14:21:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+con
+----------------End of Script----------------
+
+14:21:42 INFO  : Disconnected from the channel tcfchan#2.
+14:21:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:42 INFO  : Sourcing of 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:21:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0' command is executed.
+14:21:43 INFO  : System reset is completed.
+14:21:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 201712180096" && level==0} -index 1' command is executed.
+14:21:50 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:21:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0' command is executed.
+14:21:50 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:21:51 INFO  : 'ps7_init' command is executed.
+14:21:51 INFO  : 'ps7_post_config' command is executed.
+14:21:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:55 INFO  : The application 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/HDMI_test/Debug/HDMI_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:21:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 201712180096" && level==0} -index 1
+fpga -file D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+loadhw D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+dow D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/HDMI_test/Debug/HDMI_test.elf
+----------------End of Script----------------
+
+14:21:55 INFO  : Memory regions updated for context APU
+14:21:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:55 INFO  : 'con' command is executed.
+14:21:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+con
+----------------End of Script----------------
+
+14:23:38 INFO  : Disconnected from the channel tcfchan#3.
+14:23:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:23:39 INFO  : Sourcing of 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:23:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0' command is executed.
+14:23:39 INFO  : System reset is completed.
+14:23:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 201712180096" && level==0} -index 1' command is executed.
+14:23:46 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:23:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0' command is executed.
+14:23:47 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:23:48 INFO  : 'ps7_init' command is executed.
+14:23:48 INFO  : 'ps7_post_config' command is executed.
+14:23:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:23:52 INFO  : The application 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/HDMI_test/Debug/HDMI_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:23:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 201712180096" && level==0} -index 1
+fpga -file D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+loadhw D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+dow D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/HDMI_test/Debug/HDMI_test.elf
+----------------End of Script----------------
+
+14:23:52 INFO  : Memory regions updated for context APU
+14:23:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:23:53 INFO  : 'con' command is executed.
+14:23:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 201712180096"} -index 0
+con
+----------------End of Script----------------
+
+15:44:45 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 1476 xsdb eval "disconnect tcfchan#4"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+16:51:26 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:51:27 INFO  : XSDB server has started successfully.
+16:51:27 INFO  : Processing command line option -hwspec D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper.hdf.
+16:51:27 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+16:51:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 0' command is executed.
+16:51:56 INFO  : 'fpga -state' command is executed.
+16:51:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:59 INFO  : Sourcing of 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:51:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+16:52:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:16 INFO  : Sourcing of 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:52:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+16:52:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:26 INFO  : Sourcing of 'D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:52:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado/ax7021_hdmi/ax7021_hdmi.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+18:08:21 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:08:22 INFO  : XSDB server has started successfully.
+18:08:29 INFO  : Processing command line option -hwspec D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper.hdf.
+20:30:31 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:50:12 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:50:14 INFO  : XSDB server has started successfully.
+17:50:21 INFO  : Processing command line option -hwspec D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper.hdf.
+17:50:21 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_1.
+17:55:31 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o D:\AX7021\vivado_project\10_linux_hw\linux_hw.sdk\fsbl\bootimage\BOOT.bin
+17:55:31 INFO  : Creating new bif file D:\AX7021\vivado_project\10_linux_hw\linux_hw.sdk\fsbl\bootimage\fsbl.bif
+17:55:32 INFO  : Bootgen command execution is done.
+18:08:53 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:08:54 INFO  : XSDB server has started successfully.
+18:08:59 INFO  : Processing command line option -hwspec D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper.hdf.
+18:09:00 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_1.
+18:11:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:28 INFO  : Sourcing of 'D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:11:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+18:11:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:51 INFO  : Sourcing of 'D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:11:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:11:51 INFO  : System reset is completed.
+18:11:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+18:11:58 INFO  : FPGA configured successfully with bitstream "D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+18:11:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:11:59 INFO  : Hardware design information is loaded from 'D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:11:59 INFO  : 'ps7_init' command is executed.
+18:11:59 INFO  : 'ps7_post_config' command is executed.
+18:12:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:00 INFO  : The application 'D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/lwip/Debug/lwip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:12:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7021/vivado_project/10_linux_hw/linux_hw.sdk/lwip/Debug/lwip.elf
+----------------End of Script----------------
+
+18:12:00 INFO  : Memory regions updated for context APU
+18:12:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:00 INFO  : 'con' command is executed.
+18:12:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+19:40:24 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o D:\AX7021\vivado_project\10_linux_hw\linux_hw.sdk\fsbl\bootimage\BOOT.bin -w on
+19:40:26 INFO  : Bootgen command execution is done.
+21:03:32 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+21:03:32 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl

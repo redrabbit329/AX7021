@@ -1,0 +1,60 @@
+'Finished building: ../src/display_demo.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../vdma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: vdma_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vdma_test_bsp/ps7_cortexa9_0/lib -o "vdma_test.elf"  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vdma_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vdma_test.elf  |tee "vdma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1503396	   1312	24908768	26413476	19309a4	vdma_test.elf
+'Finished building: vdma_test.elf.size'
+' '
+14:10:31 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:12:54 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:14:02 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:14:31 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:15:09 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:30:54 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:31:14 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:31:41 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:32:11 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:32:53 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:33:15 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:34:20 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:35:29 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.
+14:46:51 **** Incremental Build of configuration Debug for project vdma_test ****
+make all 
+make: Nothing to be done for `all'.

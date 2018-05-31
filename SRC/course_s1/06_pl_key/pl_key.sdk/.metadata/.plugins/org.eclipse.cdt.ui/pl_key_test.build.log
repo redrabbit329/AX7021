@@ -1,0 +1,6 @@
+10:54:41 **** Incremental Build of configuration Debug for project pl_key_test ****
+make all 
+make: Nothing to be done for `all'.
+
+10:54:41 Build Finished (took 200ms)
+

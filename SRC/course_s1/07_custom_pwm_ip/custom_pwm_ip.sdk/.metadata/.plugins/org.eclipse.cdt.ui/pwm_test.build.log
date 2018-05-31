@@ -1,0 +1,21 @@
+11:53:34 **** Auto Build of configuration Debug for project pwm_test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../pwm_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: pwm_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../pwm_test_bsp/ps7_cortexa9_0/lib -o "pwm_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pwm_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size pwm_test.elf  |tee "pwm_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22628	   1152	  22564	  46344	   b508	pwm_test.elf
+'Finished building: pwm_test.elf.size'
+' '
+
+11:53:36 Build Finished (took 2s.81ms)
+
