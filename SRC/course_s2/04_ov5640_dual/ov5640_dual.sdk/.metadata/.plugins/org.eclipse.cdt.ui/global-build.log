@@ -1,0 +1,116 @@
+18:11:58 **** Clean-only build of configuration Debug for project dual_ov5640_test ****
+make clean 
+rm -rf  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/vdma.o  ./src/i2c/PS_i2c.d  ./src/dynclk/dynclk.d  ./src/display_ctrl/display_ctrl.d  ./src/display_demo.d ./src/vdma.d  dual_ov5640_test.elf.size  dual_ov5640_test.elf
+' '
+
+18:11:58 Build Finished (took 214ms)
+
+18:11:58 **** Clean-only build of configuration Release for project dual_ov5640_test ****
+make clean 
+rm -rf  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/vdma.o  ./src/i2c/PS_i2c.d  ./src/dynclk/dynclk.d  ./src/display_ctrl/display_ctrl.d  ./src/display_demo.d ./src/vdma.d  dual_ov5640_test.elf.size  dual_ov5640_test.elf
+' '
+18:11:59 **** Build of configuration Debug for project dual_ov5640_test ****
+make all 
+'Building file: ../src/i2c/PS_i2c.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c/PS_i2c.o" -I../../dual_ov5640_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c/PS_i2c.d" -MT"src/i2c/PS_i2c.d" -o "src/i2c/PS_i2c.o" "../src/i2c/PS_i2c.c"
+../src/i2c/PS_i2c.c: In function 'i2c_wrtie_bytes':
+../src/i2c/PS_i2c.c:50:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(2500);
+  ^
+'Finished building: ../src/i2c/PS_i2c.c'
+' '
+'Building file: ../src/dynclk/dynclk.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dynclk/dynclk.o" -I../../dual_ov5640_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dynclk/dynclk.d" -MT"src/dynclk/dynclk.d" -o "src/dynclk/dynclk.o" "../src/dynclk/dynclk.c"
+'Finished building: ../src/dynclk/dynclk.c'
+' '
+'Building file: ../src/display_ctrl/display_ctrl.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl/display_ctrl.o" -I../../dual_ov5640_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_ctrl/display_ctrl.d" -MT"src/display_ctrl/display_ctrl.d" -o "src/display_ctrl/display_ctrl.o" "../src/display_ctrl/display_ctrl.c"
+../src/display_ctrl/display_ctrl.c: In function 'DisplayStop':
+../src/display_ctrl/display_ctrl.c:107:19: warning: passing argument 1 of 'XAxiVdma_DmaStop' from incompatible pointer type
+  XAxiVdma_DmaStop(dispPtr->vdma, XAXIVDMA_READ);
+                   ^
+In file included from ../src/display_ctrl/display_ctrl.h:56:0,
+                 from ../src/display_ctrl/display_ctrl.c:63:
+../../dual_ov5640_test_bsp/ps7_cortexa9_0/include/xaxivdma.h:582:6: note: expected 'struct XAxiVdma *' but argument is of type 'struct XAxiVdma **'
+ void XAxiVdma_DmaStop(XAxiVdma *InstancePtr, u16 Direction);
+      ^
+../src/display_ctrl/display_ctrl.c:108:24: warning: passing argument 1 of 'XAxiVdma_IsBusy' from incompatible pointer type
+  while(XAxiVdma_IsBusy(dispPtr->vdma, XAXIVDMA_READ));
+                        ^
+In file included from ../src/display_ctrl/display_ctrl.h:56:0,
+                 from ../src/display_ctrl/display_ctrl.c:63:
+../../dual_ov5640_test_bsp/ps7_cortexa9_0/include/xaxivdma.h:538:5: note: expected 'struct XAxiVdma *' but argument is of type 'struct XAxiVdma **'
+ int XAxiVdma_IsBusy(XAxiVdma *InstancePtr, u16 Direction);
+     ^
+../src/display_ctrl/display_ctrl.c:117:35: warning: passing argument 1 of 'XAxiVdma_GetDmaChannelErrors' from incompatible pointer type
+  if (XAxiVdma_GetDmaChannelErrors(dispPtr->vdma, XAXIVDMA_READ))
+                                   ^
+In file included from ../src/display_ctrl/display_ctrl.h:56:0,
+                 from ../src/display_ctrl/display_ctrl.c:63:
+../../dual_ov5640_test_bsp/ps7_cortexa9_0/include/xaxivdma.h:565:5: note: expected 'struct XAxiVdma *' but argument is of type 'struct XAxiVdma **'
+ int XAxiVdma_GetDmaChannelErrors(XAxiVdma *InstancePtr, u16 Direction);
+     ^
+../src/display_ctrl/display_ctrl.c:120:34: warning: passing argument 1 of 'XAxiVdma_ClearDmaChannelErrors' from incompatible pointer type
+   XAxiVdma_ClearDmaChannelErrors(dispPtr->vdma, XAXIVDMA_READ, 0xFFFFFFFF);
+                                  ^
+In file included from ../src/display_ctrl/display_ctrl.h:56:0,
+                 from ../src/display_ctrl/display_ctrl.c:63:
+../../dual_ov5640_test_bsp/ps7_cortexa9_0/include/xaxivdma.h:566:5: note: expected 'struct XAxiVdma *' but argument is of type 'struct XAxiVdma **'
+ int XAxiVdma_ClearDmaChannelErrors(XAxiVdma *InstancePtr, u16 Direction,
+     ^
+'Finished building: ../src/display_ctrl/display_ctrl.c'
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -I../../dual_ov5640_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.d" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c: In function 'main':
+../src/display_demo.c:84:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(50000);
+  ^
+../src/display_demo.c:142:4: warning: passing argument 5 of 'vdma_write_init' makes integer from pointer without a cast
+    dispCtrl.framePtr[0][dispCtrl.curFrame[0]]);
+    ^
+In file included from ../src/display_demo.c:20:0:
+../src/vdma.h:9:5: note: expected 'unsigned int' but argument is of type 'u8 *'
+ int vdma_write_init(short DeviceID,short HoriSizeInput,short VertSizeInput,short Stride,unsigned int FrameStoreStartAddr);
+     ^
+../src/display_demo.c:144:4: warning: passing argument 5 of 'vdma_write_init' makes integer from pointer without a cast
+    dispCtrl.framePtr[1][dispCtrl.curFrame[1]]);
+    ^
+In file included from ../src/display_demo.c:20:0:
+../src/vdma.h:9:5: note: expected 'unsigned int' but argument is of type 'u8 *'
+ int vdma_write_init(short DeviceID,short HoriSizeInput,short VertSizeInput,short Stride,unsigned int FrameStoreStartAddr);
+     ^
+../src/display_demo.c:66:5: warning: unused variable 'test' [-Wunused-variable]
+  u8 test;
+     ^
+'Finished building: ../src/display_demo.c'
+' '
+'Building file: ../src/vdma.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -I../../dual_ov5640_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.d" -o "src/vdma.o" "../src/vdma.c"
+'Finished building: ../src/vdma.c'
+' '
+'Building target: dual_ov5640_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../dual_ov5640_test_bsp/ps7_cortexa9_0/lib -o "dual_ov5640_test.elf"  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/display_demo.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dual_ov5640_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size dual_ov5640_test.elf  |tee "dual_ov5640_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61524	   1688	49789680	49852892	2f8b1dc	dual_ov5640_test.elf
+'Finished building: dual_ov5640_test.elf.size'
+' '
+18:12:06 **** Incremental Build of configuration Debug for project dual_ov5640_test ****
+make all 
+make: Nothing to be done for `all'.
+18:18:44 **** Incremental Build of configuration Debug for project dual_ov5640_test ****
+make all 
+make: Nothing to be done for `all'.
+18:19:07 **** Incremental Build of configuration Debug for project dual_ov5640_test ****
+make all 
+make: Nothing to be done for `all'.

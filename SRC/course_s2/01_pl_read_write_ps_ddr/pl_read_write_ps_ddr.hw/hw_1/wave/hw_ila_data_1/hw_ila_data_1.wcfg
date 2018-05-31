@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Y:/project/AX/AX7010/vivado_project_B/01_pl_read_write_ps_ddr/pl_read_write_ps_ddr.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2048001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="20" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="error_OBUF" type="logic">
+      <obj_property name="ElementShortName">error_OBUF</obj_property>
+      <obj_property name="ObjectShortName">error_OBUF</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="mem_test_m0/error" type="logic">
+      <obj_property name="ElementShortName">mem_test_m0/error</obj_property>
+      <obj_property name="ObjectShortName">mem_test_m0/error</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="mem_test_m0/rd_cnt" type="array">
+      <obj_property name="ElementShortName">mem_test_m0/rd_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_test_m0/rd_cnt[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="mem_test_m0/state" type="array">
+      <obj_property name="ElementShortName">mem_test_m0/state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_test_m0/state[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="mem_test_m0/wr_cnt" type="array">
+      <obj_property name="ElementShortName">mem_test_m0/wr_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_test_m0/wr_cnt[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rd_burst_addr" type="array">
+      <obj_property name="ElementShortName">rd_burst_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_burst_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rd_burst_data" type="array">
+      <obj_property name="ElementShortName">rd_burst_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_burst_data[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rd_burst_data_valid" type="logic">
+      <obj_property name="ElementShortName">rd_burst_data_valid</obj_property>
+      <obj_property name="ObjectShortName">rd_burst_data_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rd_burst_finish" type="logic">
+      <obj_property name="ElementShortName">rd_burst_finish</obj_property>
+      <obj_property name="ObjectShortName">rd_burst_finish</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rd_burst_len" type="array">
+      <obj_property name="ElementShortName">rd_burst_len[9:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_burst_len[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="rd_burst_req" type="logic">
+      <obj_property name="ElementShortName">rd_burst_req</obj_property>
+      <obj_property name="ObjectShortName">rd_burst_req</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="u_aq_axi_master/M_AXI_ARREADY" type="logic">
+      <obj_property name="ElementShortName">u_aq_axi_master/M_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">u_aq_axi_master/M_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="u_aq_axi_master/M_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">u_aq_axi_master/M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">u_aq_axi_master/M_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="u_aq_axi_master/wr_state" type="array">
+      <obj_property name="ElementShortName">u_aq_axi_master/wr_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">u_aq_axi_master/wr_state[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="wr_burst_addr" type="array">
+      <obj_property name="ElementShortName">wr_burst_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_burst_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="wr_burst_data" type="array">
+      <obj_property name="ElementShortName">wr_burst_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_burst_data[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="wr_burst_data_req" type="logic">
+      <obj_property name="ElementShortName">wr_burst_data_req</obj_property>
+      <obj_property name="ObjectShortName">wr_burst_data_req</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="wr_burst_finish" type="logic">
+      <obj_property name="ElementShortName">wr_burst_finish</obj_property>
+      <obj_property name="ObjectShortName">wr_burst_finish</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="wr_burst_len" type="array">
+      <obj_property name="ElementShortName">wr_burst_len[9:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_burst_len[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="wr_burst_req" type="logic">
+      <obj_property name="ElementShortName">wr_burst_req</obj_property>
+      <obj_property name="ObjectShortName">wr_burst_req</obj_property>
+   </wvobject>
+</wave_config>

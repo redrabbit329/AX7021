@@ -1,0 +1,6 @@
+13:52:21 **** Incremental Build of configuration Debug for project ov5640_test ****
+make all 
+make: Nothing to be done for `all'.
+
+13:52:22 Build Finished (took 260ms)
+

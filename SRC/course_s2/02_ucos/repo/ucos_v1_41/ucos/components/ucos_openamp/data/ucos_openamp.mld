@@ -1,0 +1,115 @@
+#########################################################################################################
+#                                           MICRIUM XSDK REPOSITORY
+#                          (c) Copyright 2014-2015; Micrium, Inc.; Weston, FL
+#
+#               All rights reserved.  Protected by international copyright laws.
+#########################################################################################################
+
+OPTION psf_version = 2.1;
+
+BEGIN LIBRARY ucos_openamp
+  OPTION drc = ucos_openamp_drc;
+  OPTION copyfiles = all;
+  OPTION REQUIRES_OS = (ucos);
+  OPTION desc = "OpenAMP;
+  OPTION VERSION = 1.41;
+  OPTION NAME = ucos_openamp;
+
+BEGIN CATEGORY 01. RUNTIME
+    PARAM name = 01. RUNTIME;
+    PARAM name = OPENAMP_OS_CFG_TASK_PRIO, desc = "OpenAMP task priority", type = int, default = 10;
+    PARAM name = OPENAMP_OS_CFG_TASK_STK_SIZE, desc = "OpenAMP task stack size", type = int, default = 1024;
+END CATEGORY
+
+BEGIN CATEGORY 02. MASTER CONFIGURATION
+    PARAM name = 02. MASTER CONFIGURATION
+    PARAM name = OPENAMP_CFG_MASTER_ID, desc = "CPU ID of the master processor", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 03. ZYNQ AMP CORE 0
+    PARAM name = 03. ZYNQ AMP CORE 0;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_EN, desc = "Enable Zynq ps7 core 0", type = bool, default = true;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_ID, desc = "Zynq ps7 core 0 cpu ID", type = int, default = 0;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_TX_VRING_ADDR, desc = "Zynq ps7 core 0 TX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_RX_VRING_ADDR, desc = "Zynq ps7 core 0 RX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_VRING_SIZE, desc = "Zynq ps7 core 0 vring size", type = int, default = 0;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_VRING_ALIGN, desc = "Zynq ps7 core 0 vring alignment", type = int, default = 0;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_TX_INTR, desc = "Zynq ps7 core 0 tx ISR id", type = int, default = 14;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_RX_INTR, desc = "Zynq ps7 core 0 rx ISR id", type = int, default = 15;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_SHMEM_ADDR, desc = "Zynq ps7 core 0 shared memory base address", type = int, default = 0x08200000;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_0_SHMEM_SIZE, desc = "Zynq ps7 core 0 shared memory size", type = int, default = 0x00200000;
+END CATEGORY
+
+BEGIN CATEGORY 04. ZYNQ AMP CORE 1
+    PARAM name = 04. ZYNQ AMP CORE 1;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_EN, desc = "Enable Zynq ps7 core 1", type = bool, default = true;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_ID, desc = "Zynq ps7 core 1 cpu ID", type = int, default = 1;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_TX_VRING_ADDR, desc = "Zynq ps7 core 1 TX vring base address", type = int, default = 0x08000000;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_RX_VRING_ADDR, desc = "Zynq ps7 core 1 RX vring base address", type = int, default = 0x08100000;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_VRING_SIZE, desc = "Zynq ps7 core 1 vring size", type = int, default = 32;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_VRING_ALIGN, desc = "Zynq ps7 core 1 vring alignment", type = int, default = 32;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_TX_INTR, desc = "Zynq ps7 core 1 tx ISR id", type = int, default = 14;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_RX_INTR, desc = "Zynq ps7 core 1 rx ISR id", type = int, default = 15;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_SHMEM_ADDR, desc = "Zynq ps7 core 1 shared memory base address", type = int, default = 0x08200000;
+    PARAM name = OPENAMP_ZYNQ_AMP_CORE_1_SHMEM_SIZE, desc = "Zynq ps7 core 1 shared memory size", type = int, default = 0x00200000;
+END CATEGORY
+
+BEGIN CATEGORY 05. MICROBLAZE 0
+    PARAM name = 05. MICROBLAZE 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_EN, desc = "Enable MicroBlaze core 0", type = bool, default = false;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_ID, desc = "MicroBlaze core 0 cpu ID", type = int, default = 16;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_TX_VRING_ADDR, desc = "MicroBlaze core 0 TX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_RX_VRING_ADDR, desc = "MicroBlaze core 0 RX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_VRING_SIZE, desc = "MicroBlaze core 0 vring size", type = int, default = 32;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_VRING_ALIGN, desc = "MicroBlaze core 0 vring alignment", type = int, default = 32;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_TX_INTR, desc = "MicroBlaze core 0 tx ISR id", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_RX_INTR, desc = "MicroBlaze core 0 rx ISR id", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_SHMEM_ADDR, desc = "MicroBlaze core 0 shared memory base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_0_SHMEM_SIZE, desc = "MicroBlaze core 0 shared memory size", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 06. MICROBLAZE 1
+    PARAM name = 06. MICROBLAZE 1;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_EN, desc = "Enable MicroBlaze core 1", type = bool, default = false;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_ID, desc = "MicroBlaze core 1 cpu ID", type = int, default = 17;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_TX_VRING_ADDR, desc = "MicroBlaze core 1 TX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_RX_VRING_ADDR, desc = "MicroBlaze core 1 RX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_VRING_SIZE, desc = "MicroBlaze core 1 vring size", type = int, default = 32;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_VRING_ALIGN, desc = "MicroBlaze core 1 vring alignment", type = int, default = 32;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_TX_INTR, desc = "MicroBlaze core 1 tx ISR id", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_RX_INTR, desc = "MicroBlaze core 1 rx ISR id", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_SHMEM_ADDR, desc = "MicroBlaze core 1 shared memory base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_1_SHMEM_SIZE, desc = "MicroBlaze core 1 shared memory size", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 07. MICROBLAZE 2
+    PARAM name = 07. MICROBLAZE 2;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_EN, desc = "Enable MicroBlaze core 2", type = bool, default = false;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_ID, desc = "MicroBlaze core 2 cpu ID", type = int, default = 18;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_TX_VRING_ADDR, desc = "MicroBlaze core 2 TX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_RX_VRING_ADDR, desc = "MicroBlaze core 2 RX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_VRING_SIZE, desc = "MicroBlaze core 2 vring size", type = int, default = 32;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_VRING_ALIGN, desc = "MicroBlaze core 2 vring alignment", type = int, default = 32;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_TX_INTR, desc = "MicroBlaze core 2 tx ISR id", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_RX_INTR, desc = "MicroBlaze core 2 rx ISR id", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_SHMEM_ADDR, desc = "MicroBlaze core 2 shared memory base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_2_SHMEM_SIZE, desc = "MicroBlaze core 2 shared memory size", type = int, default = 0;
+END CATEGORY
+
+BEGIN CATEGORY 08. MICROBLAZE 3
+    PARAM name = 08. MICROBLAZE 3;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_EN, desc = "Enable MicroBlaze core 2", type = bool, default = false;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_ID, desc = "MicroBlaze core 2 cpu ID", type = int, default = 19;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_TX_VRING_ADDR, desc = "MicroBlaze core 2 TX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_RX_VRING_ADDR, desc = "MicroBlaze core 2 RX vring base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_VRING_SIZE, desc = "MicroBlaze core 2 vring size", type = int, default = 32;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_VRING_ALIGN, desc = "MicroBlaze core 2 vring alignment", type = int, default = 32;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_TX_INTR, desc = "MicroBlaze core 2 tx ISR id", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_RX_INTR, desc = "MicroBlaze core 2 rx ISR id", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_SHMEM_ADDR, desc = "MicroBlaze core 2 shared memory base address", type = int, default = 0;
+    PARAM name = OPENAMP_MICROBLAZE_AMP_CORE_3_SHMEM_SIZE, desc = "MicroBlaze core 2 shared memory size", type = int, default = 0;
+END CATEGORY
+    
+    
+END LIBRARY
+

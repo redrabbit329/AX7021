@@ -1,0 +1,900 @@
+11:26:19 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:26:22 INFO  : XSDB server has started successfully.
+11:26:22 INFO  : Processing command line option -hwspec F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper.hdf.
+11:27:51 INFO  : Saving repository preferences.
+11:27:51 INFO  : Reading in cores from local repositories: 
+		 F:\AX7020\vivado_project_B\ucos_v1_41\ucos
+11:27:52 INFO  : Cleaning BSP projects in the workspace.
+11:30:18 INFO  : No changes in MSS file content so not generating sources.
+11:31:16 INFO  : Refreshed build settings on project ucos_hello
+11:32:37 INFO  : Refreshed build settings on project ucos_hello
+11:33:23 INFO  : No changes in MSS file content so not generating sources.
+11:35:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:35:03 INFO  : 'fpga -state' command is executed.
+11:35:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:35:03 INFO  : Sourcing of 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:35:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:35:03 INFO  : Hardware design information is loaded from 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:35:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:35:04 INFO  : 'stop' command is executed.
+11:35:04 INFO  : 'ps7_init' command is executed.
+11:35:05 INFO  : 'ps7_post_config' command is executed.
+11:35:05 INFO  : 'con' command is executed.
+11:35:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:35:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:06 INFO  : The application 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:35:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow F:/AX7020/vivado_project_B/ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+11:35:06 INFO  : Memory regions updated for context APU
+11:35:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:06 INFO  : 'con' command is executed.
+11:35:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:35:49 INFO  : Disconnected from the channel tcfchan#1.
+11:35:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:35:49 INFO  : Sourcing of 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:35:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:35:50 INFO  : System reset is completed.
+11:35:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:35:57 INFO  : FPGA configured successfully with bitstream "F:/AX7020/vivado_project_B/ucos/ucos.runs/impl_1/system_wrapper.bit"
+11:35:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:35:58 INFO  : Hardware design information is loaded from 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:35:58 INFO  : 'ps7_init' command is executed.
+11:35:58 INFO  : 'ps7_post_config' command is executed.
+11:35:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:59 INFO  : The application 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:35:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file F:/AX7020/vivado_project_B/ucos/ucos.runs/impl_1/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow F:/AX7020/vivado_project_B/ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+11:35:59 INFO  : Memory regions updated for context APU
+11:35:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:59 INFO  : 'con' command is executed.
+11:35:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+11:36:31 INFO  : Disconnected from the channel tcfchan#2.
+11:36:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:36:32 INFO  : Sourcing of 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:36:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:36:32 INFO  : System reset is completed.
+11:36:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+11:36:39 INFO  : FPGA configured successfully with bitstream "F:/AX7020/vivado_project_B/ucos/ucos.runs/impl_1/system_wrapper.bit"
+11:36:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+11:36:40 INFO  : Hardware design information is loaded from 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:36:41 INFO  : 'ps7_init' command is executed.
+11:36:41 INFO  : 'ps7_post_config' command is executed.
+11:36:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:41 INFO  : The application 'F:/AX7020/vivado_project_B/ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:36:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file F:/AX7020/vivado_project_B/ucos/ucos.runs/impl_1/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw F:/AX7020/vivado_project_B/ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow F:/AX7020/vivado_project_B/ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+11:36:41 INFO  : Memory regions updated for context APU
+11:36:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:42 INFO  : 'con' command is executed.
+11:36:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+13:10:59 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:13:59 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+13:13:59 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+19:50:18 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:50:20 INFO  : XSDB server has started successfully.
+19:50:20 INFO  : Restoring local repository preferences: 
+		 F:\AX7020\vivado_project_B\ucos_v1_41\ucos
+19:50:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1550] Repository Directory F:/AX7020/vivado_project_B/ucos_v1_41/ucos doesn't exist in the disk
+
+19:50:20 ERROR : Internal error. Unable to add F:\AX7020\vivado_project_B\ucos_v1_41\ucos as a repository.
+19:50:20 INFO  : Processing command line option -hwspec D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper.hdf.
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_cpu_cortexa9 of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_axitimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_l2cachec of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scuc of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scugic of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scutimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_uartps of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_osiii of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_common of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_standalone of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+19:50:33 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_cpu_cortexa9 of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_axitimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_l2cachec of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_scuc of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scugic of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scutimer of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_uartps of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_osiii of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_common of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_standalone of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+19:50:33 INFO  : Unable to read in MSS file D:\AX7010\vivado_project_B\02_ucos\ucos.sdk\ucos_hello_bsp\system.mss : null
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_cpu_cortexa9 of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_axitimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_l2cachec of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_scuc of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_scugic of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scutimer of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_uartps of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_osiii of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_common of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_standalone of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_cpu_cortexa9 of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_axitimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_l2cachec of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_scuc of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scugic of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scutimer of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_uartps of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_osiii of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_common of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_standalone of version 1.41 not found in repositories
+
+19:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+19:50:33 ERROR : Failed to get_connected_periphs
+Reason: ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+
+19:51:21 INFO  : Saving repository preferences.
+19:51:21 INFO  : Reading in cores from local repositories: 
+		 D:\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+19:51:21 ERROR : (XSDB Server)ERROR: [Hsi 55-1550] Repository Directory F:/AX7020/vivado_project_B/ucos_v1_41/ucos doesn't exist in the disk
+
+19:51:22 ERROR : Internal error. Unable to add D:\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41 as a repository.
+19:51:22 INFO  : Cleaning BSP projects in the workspace.
+19:53:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:53:33 INFO  : Sourcing of 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:53:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+19:53:33 INFO  : System reset is completed.
+19:53:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+19:53:36 ERROR : bitstream is not compatible with the target
+19:53:36 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: bitstream is not compatible with the target
+19:53:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+----------------End of Script----------------
+
+19:59:51 INFO  : The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace.
+20:06:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1485172992774,  Project:1481772363952
+20:06:10 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+20:06:16 INFO  : Copied contents of D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+20:06:19 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:06:23 INFO  : 
+20:06:24 INFO  : Updating hardware inferred compiler options for ucos_hello.
+20:06:24 INFO  : Clearing existing target manager status.
+20:06:25 INFO  : Closing and re-opening the MSS file of ther project ucos_hello_bsp
+20:06:26 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:06:27 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:21:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:21:55 INFO  : Sourcing of 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:21:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:21:55 INFO  : System reset is completed.
+20:21:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:22:00 INFO  : FPGA configured successfully with bitstream "D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:22:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:22:01 INFO  : Hardware design information is loaded from 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:22:02 INFO  : 'ps7_init' command is executed.
+20:22:02 INFO  : 'ps7_post_config' command is executed.
+20:22:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:22:02 INFO  : The application 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:22:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:22:02 INFO  : Memory regions updated for context APU
+20:22:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:22:02 INFO  : 'con' command is executed.
+20:22:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+20:24:28 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 219 xsdb eval "disconnect tcfchan#1"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+20:24:31 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:28:43 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:28:44 INFO  : XSDB server has started successfully.
+20:28:50 INFO  : Restoring local repository preferences: 
+		 D:\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+20:28:50 INFO  : Processing command line option -hwspec D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper.hdf.
+20:28:51 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+20:29:58 INFO  : Saving repository preferences.
+20:31:53 INFO  : No changes in MSS file content so not generating sources.
+20:32:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:32:29 INFO  : Sourcing of 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:32:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:32:30 INFO  : System reset is completed.
+20:32:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:32:35 INFO  : FPGA configured successfully with bitstream "D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:32:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:32:35 INFO  : Hardware design information is loaded from 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:32:36 INFO  : 'ps7_init' command is executed.
+20:32:36 INFO  : 'ps7_post_config' command is executed.
+20:32:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+20:32:36 INFO  : Memory regions updated for context APU
+20:35:56 INFO  : Refreshed build settings on project ucos_hello
+20:39:28 INFO  : Disconnected from the channel tcfchan#1.
+20:39:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:39:29 INFO  : 'fpga -state' command is executed.
+20:39:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:39:30 INFO  : Sourcing of 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:39:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:39:30 INFO  : Hardware design information is loaded from 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:39:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:39:30 INFO  : 'stop' command is executed.
+20:39:31 INFO  : 'ps7_init' command is executed.
+20:39:31 INFO  : 'ps7_post_config' command is executed.
+20:39:31 INFO  : 'con' command is executed.
+20:39:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:39:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:39:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:39:32 INFO  : The application 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:39:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:39:32 INFO  : Memory regions updated for context APU
+20:39:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:39:32 INFO  : 'con' command is executed.
+20:39:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+20:42:33 INFO  : No changes in MSS file content so not generating sources.
+20:45:32 INFO  : Disconnected from the channel tcfchan#2.
+20:45:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:45:33 INFO  : 'fpga -state' command is executed.
+20:45:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:45:33 INFO  : Sourcing of 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:45:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:45:33 INFO  : Hardware design information is loaded from 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:45:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:45:34 INFO  : 'stop' command is executed.
+20:45:34 INFO  : 'ps7_init' command is executed.
+20:45:34 INFO  : 'ps7_post_config' command is executed.
+20:45:34 INFO  : 'con' command is executed.
+20:45:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:45:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:45:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:45:35 INFO  : The application 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:45:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:45:35 INFO  : Memory regions updated for context APU
+20:45:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:45:36 INFO  : 'con' command is executed.
+20:45:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+20:48:32 INFO  : Refreshed build settings on project ucos_hello
+20:49:16 INFO  : Disconnected from the channel tcfchan#3.
+20:49:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:49:16 INFO  : 'fpga -state' command is executed.
+20:49:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:49:16 INFO  : Sourcing of 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:49:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:49:17 INFO  : Hardware design information is loaded from 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:49:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:49:17 INFO  : 'stop' command is executed.
+20:49:18 INFO  : 'ps7_init' command is executed.
+20:49:18 INFO  : 'ps7_post_config' command is executed.
+20:49:18 INFO  : 'con' command is executed.
+20:49:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:49:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:49:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:49:19 INFO  : The application 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:49:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:49:19 INFO  : Memory regions updated for context APU
+20:49:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:49:19 INFO  : 'con' command is executed.
+20:49:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+20:50:04 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 423 xsdb eval "disconnect tcfchan#4"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+20:53:38 INFO  : Launching XSDB server: xsdb.bat D:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:53:39 INFO  : XSDB server has started successfully.
+20:53:44 INFO  : Restoring local repository preferences: 
+		 D:\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+20:53:44 INFO  : Processing command line option -hwspec D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper.hdf.
+20:53:45 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+20:55:23 INFO  : Refreshed build settings on project ucos_hello
+20:56:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:36 INFO  : Sourcing of 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:56:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:56:37 INFO  : System reset is completed.
+20:56:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:56:42 INFO  : FPGA configured successfully with bitstream "D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:56:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:56:42 INFO  : Hardware design information is loaded from 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:56:43 INFO  : 'ps7_init' command is executed.
+20:56:43 INFO  : 'ps7_post_config' command is executed.
+20:56:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+20:56:43 INFO  : Memory regions updated for context APU
+20:57:20 INFO  : No changes in MSS file content so not generating sources.
+20:58:20 INFO  : No changes in MSS file content so not generating sources.
+20:58:46 INFO  : Disconnected from the channel tcfchan#1.
+20:58:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:58:47 INFO  : 'fpga -state' command is executed.
+20:58:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:58:48 INFO  : Sourcing of 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:58:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:58:48 INFO  : Hardware design information is loaded from 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:58:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:58:49 INFO  : 'stop' command is executed.
+20:58:49 INFO  : 'ps7_init' command is executed.
+20:58:49 INFO  : 'ps7_post_config' command is executed.
+20:58:49 INFO  : 'con' command is executed.
+20:58:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:58:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:58:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:58:50 INFO  : The application 'D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:58:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:58:50 INFO  : Memory regions updated for context APU
+20:58:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:58:50 INFO  : 'con' command is executed.
+20:58:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+22:01:08 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 279 xsdb eval "disconnect tcfchan#2"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+16:16:24 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:16:25 INFO  : XSDB server has started successfully.
+16:16:26 INFO  : Restoring local repository preferences: 
+		 D:\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+16:16:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1550] Repository Directory D:/AX7010/vivado_project_B/02_ucos/repo/ucos_v1_41 doesn't exist in the disk
+
+16:16:26 ERROR : Internal error. Unable to add D:\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41 as a repository.
+16:16:26 INFO  : Processing command line option -hwspec Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper.hdf.
+16:17:12 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_cpu_cortexa9 of version 1.41 not found in repositories
+
+16:17:12 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_axitimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_l2cachec of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scuc of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scugic of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scutimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_uartps of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_osiii of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_common of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_standalone of version 1.41 not found in repositories
+
+16:17:12 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+16:17:12 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+16:17:12 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_cpu_cortexa9 of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_axitimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_l2cachec of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scuc of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scugic of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scutimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_uartps of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_osiii of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_common of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_standalone of version 1.41 not found in repositories
+ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+16:17:12 INFO  : Unable to read in MSS file Y:\project\AX\AX7010\vivado_project_B\02_ucos\ucos.sdk\ucos_hello_bsp\system.mss : null
+16:23:34 INFO  : Saving repository preferences.
+16:23:34 INFO  : Reading in cores from local repositories: 
+		 D:\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+16:23:34 ERROR : (XSDB Server)ERROR: [Hsi 55-1550] Repository Directory D:/AX7010/vivado_project_B/02_ucos/repo/ucos_v1_41 doesn't exist in the disk
+ERROR: [Hsi 55-1550] Repository Directory D:/AX7010/vivado_project_B/02_ucos/repo/ucos_v1_41 doesn't exist in the disk
+
+16:23:34 ERROR : Internal error. Unable to add D:\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41 as a repository.
+16:23:34 INFO  : Cleaning BSP projects in the workspace.
+16:25:13 INFO  : Saving repository preferences.
+16:25:13 INFO  : Reading in cores from local repositories: 
+		 Y:\project\AX\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+16:25:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1550] Repository Directory D:/AX7010/vivado_project_B/02_ucos/repo/ucos_v1_41 doesn't exist in the disk
+
+16:25:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1550] Repository Directory D:/AX7010/vivado_project_B/02_ucos/repo/ucos_v1_41 doesn't exist in the disk
+
+16:25:15 ERROR : Internal error. Unable to add Y:\project\AX\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41 as a repository.
+16:25:15 INFO  : Cleaning BSP projects in the workspace.
+19:54:48 INFO  : Refreshed build settings on project ucos_hello
+19:59:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:59:43 INFO  : Sourcing of 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:59:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+19:59:44 INFO  : System reset is completed.
+19:59:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+19:59:49 INFO  : FPGA configured successfully with bitstream "Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+19:59:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+19:59:49 INFO  : Hardware design information is loaded from 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+19:59:50 INFO  : 'ps7_init' command is executed.
+19:59:50 INFO  : 'ps7_post_config' command is executed.
+19:59:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+19:59:50 INFO  : Memory regions updated for context APU
+20:00:44 INFO  : Disconnected from the channel tcfchan#1.
+20:00:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:00:45 INFO  : 'fpga -state' command is executed.
+20:00:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:00:45 INFO  : Sourcing of 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:00:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:00:45 INFO  : Hardware design information is loaded from 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:00:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:00:46 INFO  : 'stop' command is executed.
+20:00:47 INFO  : 'ps7_init' command is executed.
+20:00:47 INFO  : 'ps7_post_config' command is executed.
+20:00:47 INFO  : 'con' command is executed.
+20:00:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:00:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:00:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:00:48 INFO  : The application 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:00:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:00:48 INFO  : Memory regions updated for context APU
+20:00:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:00:49 INFO  : 'con' command is executed.
+20:00:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+20:01:23 INFO  : Disconnected from the channel tcfchan#2.
+20:01:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:01:23 INFO  : Sourcing of 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:01:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:01:24 INFO  : System reset is completed.
+20:01:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:01:30 INFO  : FPGA configured successfully with bitstream "Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:01:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:01:30 INFO  : Hardware design information is loaded from 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:01:31 INFO  : 'ps7_init' command is executed.
+20:01:31 INFO  : 'ps7_post_config' command is executed.
+20:01:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:01:32 INFO  : The application 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:01:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:01:32 INFO  : Memory regions updated for context APU
+20:01:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:01:32 INFO  : 'con' command is executed.
+20:01:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+20:02:38 INFO  : Disconnected from the channel tcfchan#3.
+20:02:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:02:39 INFO  : Sourcing of 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:02:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:02:40 INFO  : System reset is completed.
+20:02:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:02:45 INFO  : FPGA configured successfully with bitstream "Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:02:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:02:46 INFO  : Hardware design information is loaded from 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:02:46 INFO  : 'ps7_init' command is executed.
+20:02:47 INFO  : 'ps7_post_config' command is executed.
+20:02:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:02:47 INFO  : The application 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:02:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:02:47 INFO  : Memory regions updated for context APU
+20:02:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:02:47 INFO  : 'con' command is executed.
+20:02:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+20:08:32 INFO  : Disconnected from the channel tcfchan#4.
+20:08:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:08:33 INFO  : Sourcing of 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:08:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:08:34 INFO  : System reset is completed.
+20:08:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+20:08:39 INFO  : FPGA configured successfully with bitstream "Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:08:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+20:08:39 INFO  : Hardware design information is loaded from 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:08:41 INFO  : 'ps7_init' command is executed.
+20:08:41 INFO  : 'ps7_post_config' command is executed.
+20:08:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:08:42 INFO  : The application 'Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:08:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+20:08:42 INFO  : Memory regions updated for context APU
+20:08:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:08:42 INFO  : 'con' command is executed.
+20:08:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+21:57:26 WARN  : channel "tcfchan#5" closed
+21:57:35 INFO  : Launching XSDB server: xsdb.bat E:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:09:32 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:09:34 INFO  : XSDB server has started successfully.
+16:09:35 INFO  : Restoring local repository preferences: 
+		 Y:\project\AX\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+16:09:44 INFO  : Processing command line option -hwspec Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper.hdf.
+16:09:44 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+16:15:13 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:15:15 INFO  : XSDB server has started successfully.
+16:15:16 INFO  : Restoring local repository preferences: 
+		 Y:\project\AX\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+16:15:26 INFO  : Processing command line option -hwspec Y:/project/AX/AX7010/vivado_project_B/02_ucos/ucos.sdk/system_wrapper.hdf.
+16:15:26 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+13:50:38 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:50:39 INFO  : XSDB server has started successfully.
+13:50:40 INFO  : Restoring local repository preferences: 
+		 Y:\project\AX\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41
+13:50:40 ERROR : (XSDB Server)ERROR: [Hsi 55-1550] Repository Directory Y:/project/AX/AX7010/vivado_project_B/02_ucos/repo/ucos_v1_41 doesn't exist in the disk
+
+13:50:40 ERROR : Internal error. Unable to add Y:\project\AX\AX7010\vivado_project_B\02_ucos\repo\ucos_v1_41 as a repository.
+13:50:40 INFO  : Processing command line option -hwspec D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/system_wrapper.hdf.
+13:51:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1511320139328,  Project:1485172992774
+13:51:48 INFO  : Copied contents of D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+13:51:50 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:51:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_cpu_cortexa9 of version 1.41 not found in repositories
+
+13:51:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_axitimer of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_l2cachec of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scuc of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scugic of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_scutimer of version 1.41 not found in repositories
+
+13:51:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core ucos_uartps of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_osiii of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_common of version 1.41 not found in repositories
+ERROR: [Hsi 55-1594] Core ucos_standalone of version 1.41 not found in repositories
+
+13:51:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:51:52 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+13:51:52 ERROR : Error updating BSP project MSS files.
+13:51:52 INFO  : Updating hardware inferred compiler options for ucos_hello.
+13:51:52 INFO  : Clearing existing target manager status.
+14:04:52 INFO  : Saving repository preferences.
+14:04:52 INFO  : Reading in cores from local repositories: 
+		 D:\svn\FPGA\AX7020\course_s2\ucos\repo\ucos_v1_41
+14:04:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1550] Repository Directory Y:/project/AX/AX7010/vivado_project_B/02_ucos/repo/ucos_v1_41 doesn't exist in the disk
+
+14:04:52 ERROR : Internal error. Unable to add D:\svn\FPGA\AX7020\course_s2\ucos\repo\ucos_v1_41 as a repository.
+14:04:52 INFO  : Cleaning BSP projects in the workspace.
+14:10:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:10:22 INFO  : Sourcing of 'D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:10:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+14:10:23 INFO  : System reset is completed.
+14:10:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+14:10:29 INFO  : FPGA configured successfully with bitstream "D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:10:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+14:10:30 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:10:30 INFO  : 'ps7_init' command is executed.
+14:10:30 INFO  : 'ps7_post_config' command is executed.
+14:10:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:31 INFO  : The application 'D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:10:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7020/course_s2/03_ucos/ucos.sdk/ucos_hello/Debug/ucos_hello.elf
+----------------End of Script----------------
+
+14:10:31 INFO  : Memory regions updated for context APU
+14:10:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:10:31 INFO  : 'con' command is executed.
+14:10:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+14:10:52 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 119 xsdb eval "disconnect tcfchan#1"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+14:10:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# 
+# Start of session at: Mon Feb 13 22:13:03 2017
+# Process ID: 6484
+# Current directory: Y:/project/AX/AX7010/vivado_project_B/07_fatfs/fatfs.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: Y:/project/AX/AX7010/vivado_project_B/07_fatfs/fatfs.sdk/webtalk/webtalk.log
+# Journal file: Y:/project/AX/AX7010/vivado_project_B/07_fatfs/fatfs.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

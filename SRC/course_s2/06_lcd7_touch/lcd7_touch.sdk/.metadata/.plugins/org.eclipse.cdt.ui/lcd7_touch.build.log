@@ -1,0 +1,103 @@
+13:42:42 **** Build of configuration Debug for project lcd7_touch ****
+make all 
+'Building file: ../src/touch/touch.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/touch/touch.o" -I../../lcd7_touch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/touch/touch.d" -MT"src/touch/touch.d" -o "src/touch/touch.o" "../src/touch/touch.c"
+../src/touch/touch.c: In function 'touch_init':
+../src/touch/touch.c:80:2: warning: implicit declaration of function 'InterruptConnect' [-Wimplicit-function-declaration]
+  InterruptConnect(XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR,(void *)&Touch_Gpio_Inst,Touch_Intr_Handler);
+  ^
+'Finished building: ../src/touch/touch.c'
+' '
+'Building file: ../src/i2c/PS_i2c.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c/PS_i2c.o" -I../../lcd7_touch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c/PS_i2c.d" -MT"src/i2c/PS_i2c.d" -o "src/i2c/PS_i2c.o" "../src/i2c/PS_i2c.c"
+../src/i2c/PS_i2c.c: In function 'i2c_wrtie_bytes':
+../src/i2c/PS_i2c.c:50:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(2500);
+  ^
+'Finished building: ../src/i2c/PS_i2c.c'
+' '
+'Building file: ../src/dynclk/dynclk.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dynclk/dynclk.o" -I../../lcd7_touch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dynclk/dynclk.d" -MT"src/dynclk/dynclk.d" -o "src/dynclk/dynclk.o" "../src/dynclk/dynclk.c"
+'Finished building: ../src/dynclk/dynclk.c'
+' '
+'Building file: ../src/display_ctrl/display_ctrl.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl/display_ctrl.o" -I../../lcd7_touch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_ctrl/display_ctrl.d" -MT"src/display_ctrl/display_ctrl.d" -o "src/display_ctrl/display_ctrl.o" "../src/display_ctrl/display_ctrl.c"
+'Finished building: ../src/display_ctrl/display_ctrl.c'
+' '
+'Building file: ../src/PS_timer.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PS_timer.o" -I../../lcd7_touch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PS_timer.d" -MT"src/PS_timer.d" -o "src/PS_timer.o" "../src/PS_timer.c"
+../src/PS_timer.c: In function 'PS_timer_init':
+../src/PS_timer.c:6:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+'Finished building: ../src/PS_timer.c'
+' '
+'Building file: ../src/display_demo.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_demo.o" -I../../lcd7_touch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.d" -o "src/display_demo.o" "../src/display_demo.c"
+../src/display_demo.c: In function 'window_1_callback':
+../src/display_demo.c:90:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+             sprintf(str,"GR%d\nLED",i);
+                     ^
+In file included from c:\xilinx\sdk\2015.4\gnu\arm\nt\arm-xilinx-eabi\include\ctype.h:4:0,
+                 from ../../lcd7_touch_bsp/ps7_cortexa9_0/include/xil_printf.h:8,
+                 from ../../lcd7_touch_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../../lcd7_touch_bsp/ps7_cortexa9_0/include/xaxivdma_hw.h:82,
+                 from ../../lcd7_touch_bsp/ps7_cortexa9_0/include/xaxivdma.h:303,
+                 from ../src/display_ctrl/display_ctrl.h:56,
+                 from ../src/display_demo.c:11:
+c:\xilinx\sdk\2015.4\gnu\arm\nt\arm-xilinx-eabi\include\stdio.h:257:5: note: expected 'char *' but argument is of type 'u8 *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/display_demo.c:90:13: warning: format '%d' expects argument of type 'int', but argument 3 has type 'UG_U32' [-Wformat=]
+             sprintf(str,"GR%d\nLED",i);
+             ^
+../src/display_demo.c:90:13: warning: format '%d' expects argument of type 'int', but argument 3 has type 'UG_U32' [-Wformat=]
+../src/display_demo.c:91:52: warning: pointer targets in passing argument 3 of 'UG_ButtonSetText' differ in signedness [-Wpointer-sign]
+             UG_ButtonSetText( &window_1, BTN_ID_0, str );
+                                                    ^
+In file included from ../src/display_demo.c:20:0:
+../src/ugui.h:807:11: note: expected 'char *' but argument is of type 'u8 *'
+ UG_RESULT UG_ButtonSetText( UG_WINDOW* wnd, UG_U8 id, char* str );
+           ^
+../src/display_demo.c: In function 'main':
+../src/display_demo.c:190:2: warning: implicit declaration of function 'InterruptInit' [-Wimplicit-function-declaration]
+  InterruptInit(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+  ^
+../src/display_demo.c:192:2: warning: implicit declaration of function 'PS_timer_init' [-Wimplicit-function-declaration]
+  PS_timer_init(&Timer, XPAR_XSCUTIMER_0_DEVICE_ID ,343 * 10000 - 1);
+  ^
+../src/display_demo.c:193:2: warning: implicit declaration of function 'InterruptConnect' [-Wimplicit-function-declaration]
+  InterruptConnect(XPAR_SCUTIMER_INTR,(void *)&Timer,Timer_Handler);
+  ^
+'Finished building: ../src/display_demo.c'
+' '
+'Building file: ../src/ugui.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ugui.o" -I../../lcd7_touch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ugui.d" -MT"src/ugui.d" -o "src/ugui.o" "../src/ugui.c"
+'Finished building: ../src/ugui.c'
+' '
+'Building file: ../src/zynq_interrupt.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_interrupt.o" -I../../lcd7_touch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zynq_interrupt.d" -MT"src/zynq_interrupt.d" -o "src/zynq_interrupt.o" "../src/zynq_interrupt.c"
+'Finished building: ../src/zynq_interrupt.c'
+' '
+'Building target: lcd7_touch.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lcd7_touch_bsp/ps7_cortexa9_0/lib -o "lcd7_touch.elf"  ./src/touch/touch.o  ./src/i2c/PS_i2c.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/PS_timer.o ./src/display_demo.o ./src/ugui.o ./src/zynq_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lcd7_touch.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lcd7_touch.elf  |tee "lcd7_touch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1681960	   3268	25155680	26840908	1998f4c	lcd7_touch.elf
+'Finished building: lcd7_touch.elf.size'
+' '
+
+13:43:00 Build Finished (took 17s.992ms)
+

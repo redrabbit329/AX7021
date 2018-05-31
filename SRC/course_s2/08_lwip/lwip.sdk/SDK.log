@@ -1,0 +1,60 @@
+14:54:34 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:54:36 INFO  : XSDB server has started successfully.
+14:54:36 INFO  : Processing command line option -hwspec D:/svn/FPGA/AX7021/course_s2/09_lwip/lwip.sdk/system_wrapper.hdf.
+14:59:32 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:59:33 INFO  : XSDB server has started successfully.
+14:59:37 INFO  : Processing command line option -hwspec D:/svn/FPGA/AX7021/course_s2/09_lwip/lwip.sdk/system_wrapper.hdf.
+14:59:38 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+15:01:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+15:01:36 INFO  : 'fpga -state' command is executed.
+15:01:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:36 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/course_s2/09_lwip/lwip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:01:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+15:01:36 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/course_s2/09_lwip/lwip.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:01:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+15:01:37 INFO  : 'stop' command is executed.
+15:01:37 INFO  : 'ps7_init' command is executed.
+15:01:37 INFO  : 'ps7_post_config' command is executed.
+15:01:38 INFO  : 'con' command is executed.
+15:01:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:01:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:39 INFO  : The application 'D:/svn/FPGA/AX7021/course_s2/09_lwip/lwip.sdk/lwip_test/Debug/lwip_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:01:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/course_s2/09_lwip/lwip.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/course_s2/09_lwip/lwip.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/course_s2/09_lwip/lwip.sdk/lwip_test/Debug/lwip_test.elf
+----------------End of Script----------------
+
+15:01:39 INFO  : Memory regions updated for context APU
+15:01:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:39 INFO  : 'con' command is executed.
+15:01:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+15:05:16 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 128 xsdb eval "disconnect tcfchan#1"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)

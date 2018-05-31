@@ -1,0 +1,439 @@
+21:00:59 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:01:00 INFO  : XSDB server has started successfully.
+21:01:01 INFO  : Processing command line option -hwspec D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper.hdf.
+21:02:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+21:02:34 INFO  : 'fpga -state' command is executed.
+21:02:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:34 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:02:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+21:02:35 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+21:02:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+21:02:36 INFO  : 'stop' command is executed.
+21:02:36 INFO  : 'ps7_init' command is executed.
+21:02:36 INFO  : 'ps7_post_config' command is executed.
+21:02:36 INFO  : 'con' command is executed.
+21:02:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:02:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:37 INFO  : The application 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:02:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+21:02:37 INFO  : Memory regions updated for context APU
+21:02:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:37 INFO  : 'con' command is executed.
+21:02:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+21:02:46 INFO  : Disconnected from the channel tcfchan#1.
+21:02:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:47 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:02:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+21:02:47 INFO  : System reset is completed.
+21:02:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+21:02:54 INFO  : FPGA configured successfully with bitstream "D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+21:02:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+21:02:55 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+21:02:56 INFO  : 'ps7_init' command is executed.
+21:02:56 INFO  : 'ps7_post_config' command is executed.
+21:02:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:56 INFO  : The application 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:02:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+21:02:56 INFO  : Memory regions updated for context APU
+21:02:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:02:57 INFO  : 'con' command is executed.
+21:02:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+21:35:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1510666075262,  Project:1510663547377
+21:35:35 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+21:35:36 INFO  : Copied contents of D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+21:35:40 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:35:42 INFO  : 
+21:35:43 INFO  : Updating hardware inferred compiler options for dual_ov5640_test.
+21:35:43 INFO  : Clearing existing target manager status.
+21:35:43 INFO  : Closing and re-opening the MSS file of ther project dual_ov5640_test_bsp
+21:35:45 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:35:45 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+21:36:13 INFO  : Disconnected from the channel tcfchan#2.
+21:36:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:36:16 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:36:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+21:36:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:36:26 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:36:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+21:36:27 INFO  : System reset is completed.
+21:36:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+21:36:34 INFO  : FPGA configured successfully with bitstream "D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+21:36:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+21:36:34 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+21:36:34 INFO  : 'ps7_init' command is executed.
+21:36:34 INFO  : 'ps7_post_config' command is executed.
+21:36:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:36:35 INFO  : The application 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:36:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+21:36:35 INFO  : Memory regions updated for context APU
+21:36:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:36:35 INFO  : 'con' command is executed.
+21:36:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+21:39:09 INFO  : Disconnected from the channel tcfchan#3.
+21:39:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:39:09 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:39:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+21:39:10 INFO  : System reset is completed.
+21:39:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+21:39:17 INFO  : FPGA configured successfully with bitstream "D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.runs/impl_1/system_wrapper.bit"
+21:39:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+21:39:17 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+21:39:18 INFO  : 'ps7_init' command is executed.
+21:39:18 INFO  : 'ps7_post_config' command is executed.
+21:39:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:39:19 INFO  : The application 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:39:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.runs/impl_1/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+21:39:19 INFO  : Memory regions updated for context APU
+21:39:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:39:19 INFO  : 'con' command is executed.
+21:39:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+08:56:56 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1510707416786,  Project:1510666075262
+08:56:56 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+08:57:02 INFO  : Copied contents of D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+08:57:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+08:57:08 INFO  : 
+08:57:09 INFO  : Updating hardware inferred compiler options for dual_ov5640_test.
+08:57:09 INFO  : Clearing existing target manager status.
+08:57:09 INFO  : Closing and re-opening the MSS file of ther project dual_ov5640_test_bsp
+08:57:10 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+08:57:11 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+09:00:40 INFO  : Disconnected from the channel tcfchan#4.
+09:00:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:00:42 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:00:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+09:02:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:02:21 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:02:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+09:02:21 INFO  : System reset is completed.
+09:02:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+09:02:28 INFO  : FPGA configured successfully with bitstream "D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.runs/impl_1/system_wrapper.bit"
+09:02:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+09:02:29 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+09:02:30 INFO  : 'ps7_init' command is executed.
+09:02:30 INFO  : 'ps7_post_config' command is executed.
+09:02:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:02:30 INFO  : The application 'D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:02:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.runs/impl_1/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+09:02:30 INFO  : Memory regions updated for context APU
+09:02:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:02:31 INFO  : 'con' command is executed.
+09:02:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+09:42:48 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 623 xsdb eval "disconnect tcfchan#5"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+09:42:48 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:09:35 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:09:37 INFO  : XSDB server has started successfully.
+18:09:37 INFO  : Processing command line option -hwspec D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper.hdf.
+18:09:59 INFO  : The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace.
+18:10:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:10:56 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:10:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:10:57 INFO  : System reset is completed.
+18:11:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+18:11:00 ERROR : couldn't open "D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.runs/impl_1/system_wrapper.bit": no such file or directory
+18:11:00 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.runs/impl_1/system_wrapper.bit": no such file or directory
+18:11:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+----------------End of Script----------------
+
+18:11:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:15 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:11:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:11:15 INFO  : System reset is completed.
+18:11:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+18:11:19 ERROR : couldn't open "D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.runs/impl_1/system_wrapper.bit": no such file or directory
+18:11:19 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/svn/FPGA/AX7021/05_ov5640_dual/ov5640_dual.runs/impl_1/system_wrapper.bit": no such file or directory
+18:11:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+----------------End of Script----------------
+
+18:11:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+18:11:38 INFO  : 'fpga -state' command is executed.
+18:11:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:39 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:11:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:11:40 INFO  : System reset is completed.
+18:11:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:11:43 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:11:43 INFO  : 'ps7_init' command is executed.
+18:11:43 INFO  : 'ps7_post_config' command is executed.
+18:11:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:44 INFO  : The application 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:11:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+18:11:44 INFO  : Memory regions updated for context APU
+18:11:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:44 INFO  : 'con' command is executed.
+18:11:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+18:12:08 INFO  : Disconnected from the channel tcfchan#1.
+18:12:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+18:12:08 INFO  : 'fpga -state' command is executed.
+18:12:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:10 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:12:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:12:10 INFO  : System reset is completed.
+18:12:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:12:13 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:12:14 INFO  : 'ps7_init' command is executed.
+18:12:14 INFO  : 'ps7_post_config' command is executed.
+18:12:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:14 INFO  : The application 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:12:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+18:12:15 INFO  : Memory regions updated for context APU
+18:12:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:15 INFO  : 'con' command is executed.
+18:12:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+18:17:55 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 216 xsdb eval "disconnect tcfchan#2"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+18:18:25 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:18:26 INFO  : XSDB server has started successfully.
+18:18:27 INFO  : Processing command line option -hwspec D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper.hdf.
+18:18:27 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+18:18:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+18:18:52 INFO  : 'fpga -state' command is executed.
+18:18:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:52 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:18:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:18:52 INFO  : System reset is completed.
+18:18:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:18:56 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:18:56 INFO  : 'ps7_init' command is executed.
+18:18:56 INFO  : 'ps7_post_config' command is executed.
+18:18:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:57 INFO  : The application 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:18:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+18:18:57 INFO  : Memory regions updated for context APU
+18:18:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:57 INFO  : 'con' command is executed.
+18:18:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+18:19:09 INFO  : Disconnected from the channel tcfchan#1.
+18:19:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:19:09 INFO  : Sourcing of 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:19:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:19:10 INFO  : System reset is completed.
+18:19:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+18:19:17 INFO  : FPGA configured successfully with bitstream "D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+18:19:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+18:19:17 INFO  : Hardware design information is loaded from 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:19:17 INFO  : 'ps7_init' command is executed.
+18:19:17 INFO  : 'ps7_post_config' command is executed.
+18:19:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:18 INFO  : The application 'D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:19:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1
+fpga -file D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow D:/svn/FPGA/AX7021/course_s2/05_ov5640_dual/ov5640_dual.sdk/dual_ov5640_test/Debug/dual_ov5640_test.elf
+----------------End of Script----------------
+
+18:19:18 INFO  : Memory regions updated for context APU
+18:19:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:18 INFO  : 'con' command is executed.
+18:19:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+18:25:55 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 134 xsdb eval "disconnect tcfchan#2"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
