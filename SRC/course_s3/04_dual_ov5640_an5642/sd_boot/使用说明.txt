@@ -1,0 +1,22 @@
+1,将“BOOT.BIN”、“image.ub”、“opencv_env.tar.gz”复制到SD卡的FAT32分区。
+
+2，双目摄像头插在开发板的J10扩展口，插一个USB鼠标，上电运行，登陆系统root（密码root）
+
+3，挂载SD卡的FAT分区到Linux
+root@ax7020_ov5640:~# mount /dev/mmcblk0p1 /mnt
+
+4，进入/tmp目录并解压opencv运行的库和测试程序，然后进入/tmp/opencv_env目录
+root@ax7020_ov5640:~# cd /tmp
+root@ax7020_ov5640:/var/volatile/tmp# tar -zxf /mnt/opencv_env.tar.gz 
+root@ax7020_ov5640:/var/volatile/tmp# cd opencv_env/
+
+5，运行库环境配置脚本然后运行opencv测试程序。
+root@ax7020_ov5640:/var/volatile/tmp/opencv_env# source env.sh 
+/tmp/opencv_env
+root@ax7020_ov5640:/var/volatile/tmp/opencv_env# ./opencv_test 
+
+6，HDMI显示器会显示出界面，点击“open”。
+
+7，从上电到操作完成，你只有10分钟的时间，因为在10分钟内QT没有运行起来显示系统就会进入休眠状态。
+
+8. 可以用类似的方式，使用nfs挂载运行。
