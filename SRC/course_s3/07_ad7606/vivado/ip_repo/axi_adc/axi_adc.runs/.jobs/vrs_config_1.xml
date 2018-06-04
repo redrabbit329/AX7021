@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="adc_buf_synth_1" LaunchDir="D:/test/ad7606_test_v2/axi_adc/axi_adc.runs/adc_buf_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-

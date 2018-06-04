@@ -1,8 +1,0 @@
-09:35:53 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
-09:35:55 INFO  : XSDB server has started successfully.
-09:35:55 INFO  : Processing command line option -hwspec D:/svn/FPGA/AX7021/course_s3/07_ad9226/vivado/ad9226_linux.sdk/system_wrapper.hdf.
-09:37:21 INFO  : Saving repository preferences.
-09:37:21 INFO  : Reading in cores from global repositories: 
-		 C:\Xilinx\device-tree-xlnx-xilinx-v2015.4
-09:37:21 INFO  : Cleaning BSP projects in the workspace.
-09:38:23 INFO  : Saving repository preferences.
